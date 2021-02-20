@@ -6,6 +6,8 @@ ARCH="armv7"
 SetupChroot() {
 	mkdir "$DIR"
 	tar -zxf alpine-minirootfs-"$VER"."$SUBVER"-"$ARCH".tar.gz -C "$DIR"
+	echo "nameserver 8.8.4.4" > "$DIR"/etc/resolv.conf
+	echo "nameserver 8.8.8.8" >> "$DIR"/etc/resolv.conf
 	echo "cd $DIR" > start.sh
 	echo "busybox mount --bind /dev dev" >> start.sh
 	echo "mount -t devpts devpts dev/pts" >> start.sh
