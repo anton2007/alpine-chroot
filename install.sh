@@ -11,7 +11,7 @@ SetupChroot() {
 	echo "mount -t devpts devpts dev/pts" >> start.sh
 	echo "mount -t proc proc proc" >> start.sh
 	echo "mount -t sysfs sysfs sys" >> start.sh
-	echo "export PATH="$PATH:/usr/sbin:/sbin:/bin"" >> start.sh
+	echo "export PATH="$PATH:/usr/sbin:/usr/bin:/sbin:/bin"" >> start.sh
 	echo "chroot . /bin/sh" >> start.sh
 	echo "umount dev/pts" >> start.sh
 	echo "umount dev" >> start.sh
