@@ -10,6 +10,12 @@ cd ~/
 chmod 777 installer.sh
 ./installer.sh
 ```
+
+now you can run it with
+```
+./start.sh
+```
+
 # changing OS install settings
 all settings saved in script as variables!
 you can edit $ARCH variable to install Alpine chroot for any CPU architecture
