@@ -1,6 +1,6 @@
 # alpine-chroot
-Script that installing Alpine chroot in all UNIX systems with busybox and coreutils ( include Android )
-to install this in Android you need only root, busybox and Terminal emulator ( not Termux )
+Script that installing Alpine chroot in all UNIX systems with busybox and coreutils ( including Android )
+to install this in Android you need only root, busybox and Terminal emulator
 # Installing on Android
 to install this run this commands:
 ```sh
